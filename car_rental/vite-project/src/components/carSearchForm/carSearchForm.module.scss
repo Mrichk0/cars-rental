@@ -1,0 +1,76 @@
+.form {
+  padding-top: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__selectContainer {
+    text-align: start;
+    margin-right: 18px;
+    position: relative;
+  }
+
+  &__label {
+    color: #8a8a89;
+    font-size: 14px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+  }
+
+  &__input {
+    padding: 14px 24px;
+    width: 160px;
+    font-size: 18px;
+
+    border: none;
+    background-color: #f7f7fb;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+    &__from {
+      border-radius: 14px 0 0 14px;
+      border-right: 1px solid rgba(18, 20, 23, 0.05);
+      padding-left: 72px;
+    }
+    &__to {
+      border-radius: 0 14px 14px 0;
+      padding-left: 50px;
+    }
+  }
+  &__inputContainer {
+    position: relative;
+  }
+  &__labelInput {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    color: #8a8a89;
+    font-size: 14px;
+  }
+  &__placeholder {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+  }
+  &__button {
+    margin-left: 18px;
+    padding: 14px 44px;
+    border-radius: 12px;
+    background: #3470ff;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: #0b44cd;
+    }
+  }
+}
